@@ -1,0 +1,58 @@
+// Pricing plans data — name, price, features, and popularity flag for each tier
+
+export const plans = [
+  {
+    name: 'Starter',
+    price: '₹7,999',
+    usd: '~$95',
+    desc: 'For freelancers and small businesses going online for the first time.',
+    features: [
+      [true, 'Up to 5 pages'],
+      [true, 'Mobile responsive'],
+      [true, 'Contact form + WhatsApp CTA'],
+      [true, 'Basic SEO'],
+      [true, 'Google Maps embed'],
+      [true, '3-month support'],
+      [false, 'E-commerce'],
+      [false, 'Automation'],
+      [false, 'Admin dashboard'],
+    ],
+    popular: false,
+  },
+  {
+    name: 'Growth',
+    price: '₹16,999',
+    usd: '~$200',
+    desc: 'For businesses serious about digital presence — automation, more pages, and conversion tools.',
+    features: [
+      [true, 'Up to 12 pages'],
+      [true, 'Mobile responsive'],
+      [true, 'Contact form + WhatsApp CTA'],
+      [true, 'Full SEO optimization'],
+      [true, 'Blog / news section'],
+      [true, 'WhatsApp enquiry automation'],
+      [true, 'Admin content panel'],
+      [true, '6-month support'],
+      [false, 'Full E-commerce'],
+    ],
+    popular: true,
+  },
+  {
+    name: 'Pro',
+    price: '₹29,999',
+    usd: '~$360',
+    desc: 'Full-stack: website + e-commerce + automation + dashboard. Built to scale your business.',
+    features: [
+      [true, 'Unlimited pages'],
+      [true, 'Mobile responsive'],
+      [true, 'Full contact + CRM'],
+      [true, 'Advanced SEO + sitemap'],
+      [true, 'E-commerce + payments'],
+      [true, 'Business automation flows'],
+      [true, 'Custom admin dashboard'],
+      [true, '1-year support'],
+      [true, 'Monthly report'],
+    ],
+    popular: false,
+  },
+];
