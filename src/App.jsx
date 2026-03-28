@@ -5,6 +5,7 @@ import { Footer } from './components/layout/Footer';
 import { WaIcon } from './components/ui/WaIcon';
 import { useReveal } from './hooks/useReveal';
 import { WA } from './constants';
+import { Analytics } from '@vercel/analytics/react';
 
 import { Hero } from './sections/Hero';
 import { Ticker } from './sections/Ticker';
@@ -44,6 +45,7 @@ export default function App() {
       <a href={WA} target="_blank" rel="noopener noreferrer" className="wa-float" title="Chat on WhatsApp">
         <WaIcon size={26} />
       </a>
+      <Analytics />
     </>
   );
 }
